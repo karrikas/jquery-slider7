@@ -1,1 +1,118 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jquery Slider 7</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container theme-showcase" role="main">
+        <h1>jQuery Slider 7</h1>
+        <div class="bs-docs-section">
+            <h2>Install slider</h2>
+            <p>You can install using <a href="http://bower.io/">bower</a> or you can download <a href="https://github.com/karrikas/jquery-slider7/archive/master.zip">zip file from github</a>. See the source in the <a href="https://github.com/karrikas/jquery-slider7">github page</a>.</p>
+            <pre>$ bower install slider7</pre>
+            <p>Add javascript code in your html</a>
+            <pre>&lt;script type="text/javascript" src="/js/file/path/slider7.min.js"&gt;&lt;/script&gt;</pre>
+
+            <p>Image list, with main container and img tags</p>
+            <pre>&lt;div class="slider7"&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;&lt;img src="photo1.jpeg"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;&lt;img src="photo2.jpeg"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;&lt;img src="photo3.jpeg"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;&lt;img src="photo4.jpeg"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;&lt;img src="photo5.jpeg"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+            <p>Load plugin on the html</p>
+            <pre>jQuery(window).load(function(){
+    jQuery( ".slider7" ).slider7();
+});</pre>
+        <div class="alert alert-warning" role="alert">
+            Use <code>jQuery(window).load()</code> instead of <code>jQuery(document).ready()</code> because the plugin need images information like heigth and width to build itself. 
+        </div>
+
+        </div>
+        <div class="bs-docs-section">
+            <h2>Example</h2>
+
+            <div class="slider7">
+                <div>
+                    <a href="#"><img src="img/food.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food2.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food3.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food4.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food5.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food6.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food7.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food8.jpeg" ></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/food9.jpeg" ></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bs-docs-section">
+            <h2>All the options avalaible</h2>
+            <pre>
+jQuery( ".slider7" ).slider7({
+    height: "400px",
+    imgContent: "div",
+    imgMarginRight: "15px",
+    speed: 15
+});</pre>
+
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="https://raw.githubusercontent.com/karrikas/jquery-slider7/master/slider7.min.js"></script>
+    <script type="text/javascript">
+    jQuery(window).load(function(){
+        jQuery( ".slider7" ).slider7();
+    });
+    </script>
+</body>
+</html>
