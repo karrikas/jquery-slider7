@@ -1,0 +1,31 @@
+{
+  "name": "slider7",
+  "main": "slider7.min.js",
+  "homepage": "http://karrikas.github.io/jquery-slider7/",
+  "authors": [
+    "karrikas <karrikas@gmail.com>"
+  ],
+  "description": "jquery plugin for slide images",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "jquery",
+    "plugin",
+    "slider",
+    "image",
+    "horizontal",
+    "gallery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
